@@ -281,8 +281,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
         mapPageUrl={siteMapPageUrl}
         mapImageUrl={mapImageUrl}
         searchNotion={config.isSearchEnabled ? searchNotion : null}
-        pageAside={null}
-        // footer={footer}
+        pageAside={pageAside}
+        footer={footer}
         // pageCover={<div style={{ marginTop: 128 }} />}
         // header={<div></div>}
         // footer={<div></div>}
