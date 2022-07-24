@@ -284,6 +284,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside}
         footer={footer}
+        pageCover={<div style={{ marginTop: 128 }} />}
       />
 
       <GitHubShareButton />
