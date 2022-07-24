@@ -1,5 +1,5 @@
 import pMemoize from 'p-memoize'
-import { getAllPagesInSpace, uuidToId } from 'notion-utils'
+import { getAllPagesInSpace } from 'notion-utils'
 
 import { includeNotionIdInUrls } from './config'
 import { notion } from './notion-api'
