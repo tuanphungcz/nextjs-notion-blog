@@ -30,7 +30,7 @@ async function getAllPagesImpl(
   rootNotionSpaceId: string
 ): Promise<Partial<types.SiteMap>> {
   const getPage = async (pageId: string, ...args) => {
-    console.log('\nnotion getPage', uuidToId(pageId))
+    // console.log('\nnotion getPage', uuidToId(pageId))
     return notion.getPage(pageId, ...args)
   }
 
@@ -54,11 +54,11 @@ async function getAllPagesImpl(
       if (map[canonicalPageId]) {
         // you can have multiple pages in different collections that have the same id
         // TODO: we may want to error if neither entry is a collection page
-        console.warn('error duplicate canonical page id', {
-          canonicalPageId,
-          pageId,
-          existingPageId: map[canonicalPageId]
-        })
+        // console.warn('error duplicate canonical page id', {
+        //   canonicalPageId,
+        //   pageId,
+        //   existingPageId: map[canonicalPageId]
+        // })
 
         return map
       } else {
