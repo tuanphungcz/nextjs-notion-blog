@@ -120,6 +120,8 @@ export const redisNamespace: string | null = getEnv(
   'preview-images'
 )
 
+export const redisConnectionUrl = getEnv('REDIS_RAILWAY_CONNECTION_URL', null)
+
 // ----------------------------------------------------------------------------
 
 export const isServer = typeof window === 'undefined'
