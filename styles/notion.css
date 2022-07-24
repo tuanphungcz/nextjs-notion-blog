@@ -81,7 +81,7 @@
 }
 
 .notion-collection-card-cover img {
-  border-radius: 16px;
+  border-radius: 8px;
 }
 
 .notion-collection-card {
@@ -89,8 +89,8 @@
 }
 
 .notion-collection-card-cover {
-  border-radius: 16px;
-  box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
 }
 
 .notion-collection-card-cover {
@@ -103,10 +103,15 @@
   filter: brightness(120%);
 }
 
+.notion-collection-card:hover {
+  background: initial;
+}
+
+
 .notion-collection-card-body {
   position: relative;
-  margin-top: 16px;
-  padding: 10px;
+  margin-top: 24px;
+  padding: 8px;
 }
 
 /* only target safari */
@@ -174,6 +179,7 @@
 
 .notion-collection-row {
   padding-bottom: 1em;
+  border: none;
 }
 
 .notion-collection-page-properties .notion-collection-column-title {
@@ -195,13 +201,11 @@
 .notion-page-cover-wrapper,
 .notion-page-cover-wrapper span,
 .notion-page-cover-wrapper img {
-  max-width: 1200px !important;
+  max-width: 1200px;
   border-radius: 24px;
 }
 
-.notion-page-cover-wrapper {
-  box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
-}
+
 
 @media only screen and (max-width: 1200px) {
 
@@ -381,10 +385,16 @@
 
 
 .notion-property-multi_select-item {
-  border-radius: 16px;
-  height: 24px;
-  padding: 4px 16px;
+  border-radius: 10px;
+  height: 20px;
+  padding: 2px 16px;
+  color: #6b7280 !important;
+  background: #f1f1f1 !important;
+  font-weight: 600;
+  font-size: 10px;
 }
+
+
 
 
 .notion-property-select {
@@ -396,12 +406,43 @@
   color: #6b7280
 }
 
-.notion-property.notion-property-date {
+#main .notion-property.notion-property-date {
   position: absolute;
-  top: 0px;
+  top: -8px;
+  color: #6b7280
+}
+
+.notion-collection-header-title {
+  display: none;
 }
 
 
-.notion-collection-header-title {
+
+/* .detail-page .notion-page-content.notion-page-content-has-aside.notion-page-content-has-toc {
+  display: block;
+}
+
+@media only screen and (min-width: 1300px) {
+
+  .detail-page .notion-page-content.notion-page-content-has-aside.notion-page-content-has-toc {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 100px;
+  }
+
+  .detail-page aside.notion-aside {
+    padding-right: 60px;
+  }
+} */
+
+
+
+
+.detail-page .notion-title {
+  text-align: left;
+}
+
+
+.detail-page .notion-collection-page-properties {
   display: none;
 }

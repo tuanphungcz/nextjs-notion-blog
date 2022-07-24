@@ -29,7 +29,6 @@ import { PageHead } from './PageHead'
 import { PageAside } from './PageAside'
 import { Footer } from './Footer'
 import { NotionPageHeader } from './NotionPageHeader'
-import { GitHubShareButton } from './GitHubShareButton'
 
 import styles from './styles.module.css'
 
@@ -282,12 +281,19 @@ export const NotionPage: React.FC<types.PageProps> = ({
         mapPageUrl={siteMapPageUrl}
         mapImageUrl={mapImageUrl}
         searchNotion={config.isSearchEnabled ? searchNotion : null}
-        pageAside={pageAside}
-        footer={footer}
+        pageAside={null}
+        // footer={footer}
         // pageCover={<div style={{ marginTop: 128 }} />}
+        // header={<div></div>}
+        // footer={<div></div>}
+        // pageHeader={<div></div>}
+        // pageFooter={<div></div>}
+        // pageTitle={<div></div>}
+        // // pageAside={<div></div>}
+        pageCover={<div />}
       />
 
-      <GitHubShareButton />
+      {/* <GitHubShareButton /> */}
     </>
   )
 }
